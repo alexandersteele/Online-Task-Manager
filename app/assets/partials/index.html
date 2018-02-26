@@ -1,0 +1,21 @@
+
+    <table class="table table-striped">
+        <tr>
+            <h1>All Contacts</h1>
+        </tr>
+        <tr>
+            <th>Owner</th>
+            <th>Title</th>
+            <th>Task</th>
+            <th>Completed</th>
+            <th>Actions</th>
+        </tr>
+        <tr ng-repeat="task in tasks">
+            <td>{{ task.owner }}</td>
+            <td>{{ task.title }}</td>
+            <td>{{ task.task }}</td>
+            <td>{{ task.completed }}</td>
+            <td><a href="/task/{{$index}}" class="btn btn-default btn-xs">View</a></td>
+        </tr>
+    </table>
+
