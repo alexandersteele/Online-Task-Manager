@@ -1,6 +1,6 @@
 <table class="table table-striped">
     <tr>
-        <h1>Selected Task</h1>
+        <h1>{{  task.owner }} <small>{{ task.title }}</small></h1>
     </tr>
     <tr>
         <th>Owner</th>
@@ -8,8 +8,10 @@
         <th>Task</th>
         <th>Completed</th>
     </tr>
-        <td>{{ task.owner }}</td>
-        <td>{{ task.title }}</td>
-        <td>{{ task.task }}</td>
-        <td>{{ task.completed }}</td>
+    <td><p class="form-control-static" editable="task.owner" field-type="text"></p></td>
+    <td><p class="form-control-static" editable="task.title" field-type="text"></p></td>
+    <td><p class="form-control-static" editable="task.task" field-type="text"></p></td>
+    <td><p class="form-control-static" editable="task.completed" field-type="text"></p></td>
 </table>
+
+
